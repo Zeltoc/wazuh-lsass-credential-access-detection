@@ -1,7 +1,7 @@
-# Wazuh SIEM Lab — lsass Credential Access Detection (T1003.001)
+# Wazuh SIEM Lab - lsass Credential Access Detection (T1003.001)
 
 **Tools:** Wazuh 4.x, Sysmon (SwiftOnSecurity config, modified), PowerShell  
-**Platform:** Proxmox homelab — Ubuntu 22.04 (Wazuh manager), Windows 11 (monitored endpoint)  
+**Platform:** Proxmox homelab - Ubuntu 22.04 (Wazuh manager), Windows 11 (monitored endpoint)  
 **MITRE ATT&CK:** T1003.001
 
 ---
