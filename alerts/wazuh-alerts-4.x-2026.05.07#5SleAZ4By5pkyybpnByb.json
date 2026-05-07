@@ -1,0 +1,92 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.05.07",
+  "_id": "5SleAZ4By5pkyybpnByb",
+  "_score": 1,
+  "_source": {
+    "agent": {
+      "ip": "192.168.1.162",
+      "name": "DESKTOP-72VLLG0",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh-Standard-PC-i440FX-PIIX-1996"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "sourceThreadId": "5888",
+          "grantedAccess": "0x101000",
+          "targetProcessGUID": "{24802426-358f-69fc-0c00-000000001f00}",
+          "targetProcessId": "604",
+          "utcTime": "2026-05-07 07:37:14.341",
+          "sourceUser": "NT AUTHORITY\\\\SYSTEM",
+          "sourceProcessId": "3456",
+          "sourceImage": "C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\MsMpEng.exe",
+          "targetImage": "C:\\\\WINDOWS\\\\system32\\\\lsass.exe",
+          "sourceProcessGUID": "{24802426-3590-69fc-4700-000000001f00}",
+          "callTrace": "C:\\\\WINDOWS\\\\SYSTEM32\\\\ntdll.dll+161fc4|C:\\\\WINDOWS\\\\SYSTEM32\\\\KERNELBASE.dll+42e76|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+1b681e|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+1b6617|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+2f8b84|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+207eb4|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+207da5|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+345762|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4c9dd4|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4c96f8|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4c9541|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+af3620|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4a55ba|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4a5529|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4a50ec|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+1774d6|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+1771df|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4003a5|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4e902c|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Definition Updates\\\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\\\mpengine.dll+4e8104|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\mpsvc.dll+3e395|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\mprtp.dll+3d467|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\mprtp.dll+3d12b|C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\mprtp.dll+b0f2",
+          "targetUser": "NT AUTHORITY\\\\SYSTEM"
+        },
+        "system": {
+          "eventID": "10",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process accessed:\r\nRuleName: -\r\nUtcTime: 2026-05-07 07:37:14.341\r\nSourceProcessGUID: {24802426-3590-69fc-4700-000000001f00}\r\nSourceProcessId: 3456\r\nSourceThreadId: 5888\r\nSourceImage: C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26030.3011-0\\MsMpEng.exe\r\nTargetProcessGUID: {24802426-358f-69fc-0c00-000000001f00}\r\nTargetProcessId: 604\r\nTargetImage: C:\\WINDOWS\\system32\\lsass.exe\r\nGrantedAccess: 0x101000\r\nCallTrace: C:\\WINDOWS\\SYSTEM32\\ntdll.dll+161fc4|C:\\WINDOWS\\SYSTEM32\\KERNELBASE.dll+42e76|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+1b681e|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+1b6617|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+2f8b84|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+207eb4|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+207da5|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+345762|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4c9dd4|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4c96f8|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4c9541|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+af3620|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4a55ba|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4a5529|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4a50ec|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+1774d6|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+1771df|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4003a5|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4e902c|C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{88675230-9F3D-4452-A31D-F29211CF3D92}\\mpengine.dll+4e8104|C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26030.3011-0\\mpsvc.dll+3e395|C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26030.3011-0\\mprtp.dll+3d467|C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26030.3011-0\\mprtp.dll+3d12b|C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26030.3011-0\\mprtp.dll+b0f2\r\nSourceUser: NT AUTHORITY\\SYSTEM\r\nTargetUser: NT AUTHORITY\\SYSTEM\"",
+          "version": "3",
+          "systemTime": "2026-05-07T07:37:14.3432067Z",
+          "eventRecordID": "4848",
+          "threadID": "4268",
+          "computer": "DESKTOP-72VLLG0",
+          "task": "10",
+          "processID": "3484",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 1,
+      "mail": true,
+      "level": 12,
+      "description": "Lsass process was accessed by C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.26030.3011-0\\\\MsMpEng.exe with read permissions, possible credential dump",
+      "groups": [
+        "sysmon",
+        "sysmon_eid10_detections",
+        "windows"
+      ],
+      "mitre": {
+        "technique": [
+          "LSASS Memory"
+        ],
+        "id": [
+          "T1003.001"
+        ],
+        "tactic": [
+          "Credential Access"
+        ]
+      },
+      "id": "92900"
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-05-07T07:37:16.320Z",
+    "location": "EventChannel",
+    "id": "1778139436.514586",
+    "timestamp": "2026-05-07T01:37:16.320-0600"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-05-07T07:37:16.320Z"
+    ],
+    "@timestamp": [
+      "2026-05-07T07:37:16.320Z"
+    ]
+  }
+}

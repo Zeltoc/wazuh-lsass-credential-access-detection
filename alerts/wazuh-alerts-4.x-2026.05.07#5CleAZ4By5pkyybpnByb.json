@@ -1,0 +1,94 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.05.07",
+  "_id": "5CleAZ4By5pkyybpnByb",
+  "_score": 1,
+  "_source": {
+    "agent": {
+      "ip": "192.168.1.162",
+      "name": "DESKTOP-72VLLG0",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh-Standard-PC-i440FX-PIIX-1996"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "sourceThreadId": "9428",
+          "grantedAccess": "0x1fffff",
+          "targetProcessGUID": "{24802426-358f-69fc-0c00-000000001f00}",
+          "targetProcessId": "604",
+          "utcTime": "2026-05-07 07:37:14.341",
+          "sourceUser": "DESKTOP-72VLLG0\\\\Admin",
+          "sourceProcessId": "9292",
+          "sourceImage": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe",
+          "targetImage": "C:\\\\WINDOWS\\\\system32\\\\lsass.exe",
+          "sourceProcessGUID": "{24802426-35a2-69fc-1301-000000001f00}",
+          "callTrace": "C:\\\\WINDOWS\\\\SYSTEM32\\\\ntdll.dll+161fc4|C:\\\\WINDOWS\\\\System32\\\\KERNELBASE.dll+42e76|UNKNOWN(00007FFB9A78DC28)",
+          "targetUser": "NT AUTHORITY\\\\SYSTEM"
+        },
+        "system": {
+          "eventID": "10",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process accessed:\r\nRuleName: -\r\nUtcTime: 2026-05-07 07:37:14.341\r\nSourceProcessGUID: {24802426-35a2-69fc-1301-000000001f00}\r\nSourceProcessId: 9292\r\nSourceThreadId: 9428\r\nSourceImage: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\r\nTargetProcessGUID: {24802426-358f-69fc-0c00-000000001f00}\r\nTargetProcessId: 604\r\nTargetImage: C:\\WINDOWS\\system32\\lsass.exe\r\nGrantedAccess: 0x1FFFFF\r\nCallTrace: C:\\WINDOWS\\SYSTEM32\\ntdll.dll+161fc4|C:\\WINDOWS\\System32\\KERNELBASE.dll+42e76|UNKNOWN(00007FFB9A78DC28)\r\nSourceUser: DESKTOP-72VLLG0\\Admin\r\nTargetUser: NT AUTHORITY\\SYSTEM\"",
+          "version": "3",
+          "systemTime": "2026-05-07T07:37:14.3430438Z",
+          "eventRecordID": "4844",
+          "threadID": "4268",
+          "computer": "DESKTOP-72VLLG0",
+          "task": "10",
+          "processID": "3484",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 1,
+      "mail": true,
+      "level": 15,
+      "description": "CRITICAL: Possible credential dump - PROCESS_ALL_ACCESS handle opened on lsass.exe by C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe [T1003.001]",
+      "groups": [
+        "custom_brute_force",
+        "windows_security",
+        "credential_access",
+        "lsass_access"
+      ],
+      "mitre": {
+        "technique": [
+          "LSASS Memory"
+        ],
+        "id": [
+          "T1003.001"
+        ],
+        "tactic": [
+          "Credential Access"
+        ]
+      },
+      "id": "100005"
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"10\",\"version\":\"3\",\"level\":\"4\",\"task\":\"10\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2026-05-07T07:37:14.3430438Z\",\"eventRecordID\":\"4844\",\"processID\":\"3484\",\"threadID\":\"4268\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"DESKTOP-72VLLG0\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process accessed:\\r\\nRuleName: -\\r\\nUtcTime: 2026-05-07 07:37:14.341\\r\\nSourceProcessGUID: {24802426-35a2-69fc-1301-000000001f00}\\r\\nSourceProcessId: 9292\\r\\nSourceThreadId: 9428\\r\\nSourceImage: C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\\r\\nTargetProcessGUID: {24802426-358f-69fc-0c00-000000001f00}\\r\\nTargetProcessId: 604\\r\\nTargetImage: C:\\\\WINDOWS\\\\system32\\\\lsass.exe\\r\\nGrantedAccess: 0x1FFFFF\\r\\nCallTrace: C:\\\\WINDOWS\\\\SYSTEM32\\\\ntdll.dll+161fc4|C:\\\\WINDOWS\\\\System32\\\\KERNELBASE.dll+42e76|UNKNOWN(00007FFB9A78DC28)\\r\\nSourceUser: DESKTOP-72VLLG0\\\\Admin\\r\\nTargetUser: NT AUTHORITY\\\\SYSTEM\\\"\"},\"eventdata\":{\"utcTime\":\"2026-05-07 07:37:14.341\",\"sourceProcessGUID\":\"{24802426-35a2-69fc-1301-000000001f00}\",\"sourceProcessId\":\"9292\",\"sourceThreadId\":\"9428\",\"sourceImage\":\"C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\WindowsPowerShell\\\\\\\\v1.0\\\\\\\\powershell.exe\",\"targetProcessGUID\":\"{24802426-358f-69fc-0c00-000000001f00}\",\"targetProcessId\":\"604\",\"targetImage\":\"C:\\\\\\\\WINDOWS\\\\\\\\system32\\\\\\\\lsass.exe\",\"grantedAccess\":\"0x1fffff\",\"callTrace\":\"C:\\\\\\\\WINDOWS\\\\\\\\SYSTEM32\\\\\\\\ntdll.dll+161fc4|C:\\\\\\\\WINDOWS\\\\\\\\System32\\\\\\\\KERNELBASE.dll+42e76|UNKNOWN(00007FFB9A78DC28)\",\"sourceUser\":\"DESKTOP-72VLLG0\\\\\\\\Admin\",\"targetUser\":\"NT AUTHORITY\\\\\\\\SYSTEM\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-05-07T07:37:16.249Z",
+    "location": "EventChannel",
+    "id": "1778139436.510701",
+    "timestamp": "2026-05-07T01:37:16.249-0600"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-05-07T07:37:16.249Z"
+    ],
+    "@timestamp": [
+      "2026-05-07T07:37:16.249Z"
+    ]
+  }
+}
