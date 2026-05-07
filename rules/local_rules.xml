@@ -1,0 +1,19 @@
+<!--
+  Rule 100005
+  Purpose: Detect PROCESS_ALL_ACCESS (0x1FFFFF) handle requests against lsass.exe.
+           This access mask is used by Mimikatz and other credential dumping tools.
+           Filters out known legitimate sources like Defender (MsMpEng.exe).
+           Simulation performed using PowerShell OpenProcess() call.
+  MITRE: T1003.001 - OS Credential Dumping: LSASS Memory
+-->
+<rule id="100005" level="15">
+  <if_sid>61612</if_sid>
+  <field name="win.eventdata.targetImage" type="pcre2">(?i)lsass\.exe</field>
+  <field name="win.eventdata.grantedAccess">0x1FFFFF</field>
+  <field name="win.eventdata.sourceImage" type="pcre2" negate="yes">(?i)MsMpEng\.exe</field>
+  <description>CRITICAL: Possible credential dump - PROCESS_ALL_ACCESS handle opened on lsass.exe by $(win.eventdata.sourceImage) [T1003.001]</description>
+  <mitre>
+    <id>T1003.001</id>
+  </mitre>
+  <group>credential_access,lsass_access,</group>
+</rule>
